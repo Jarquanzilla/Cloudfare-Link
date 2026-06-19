@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take Meowt &mdash; Cat Cafe in Tulsa, OK</title>
+  <meta name="description" content="Take Meowt is a cozy cat cafe in Tulsa, Oklahoma. Sip coffee, snuggle adoptable cats, and help at-risk kitties find their forever homes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="brand">
+        <span class="brand__paw">🐾</span>
+        <span class="brand__name">Take&nbsp;Meowt</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#experience">The Cafe</a>
+        <a href="#menu">Menu</a>
+        <a href="#cats">Adopt</a>
+        <a href="#visit">Visit</a>
+        <a href="#reserve" class="btn btn--sm">Reserve</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__blob hero__blob--1"></div>
+    <div class="hero__blob hero__blob--2"></div>
+    <div class="hero__content">
+      <p class="eyebrow">Tulsa, Oklahoma</p>
+      <h1>Coffee, calm,<br /><span class="hl">and a lap full of cats.</span></h1>
+      <p class="lead">
+        Take Meowt is a cozy cat cafe where every purr has a purpose. Sip something
+        warm, unwind with up to 40 adoptable cats, and maybe meet your new best friend.
+      </p>
+      <div class="hero__cta">
+        <a href="#reserve" class="btn btn--lg">Book the Lounge</a>
+        <a href="#cats" class="btn btn--ghost btn--lg">Meet the Cats</a>
+      </div>
+      <div class="hero__stats">
+        <div><strong>400+</strong><span>cats adopted</span></div>
+        <div><strong>25&ndash;40</strong><span>cats in the lounge</span></div>
+        <div><strong>$15</strong><span>per hour</span></div>
+      </div>
+    </div>
+    <div class="hero__cat" aria-hidden="true">🐱</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Purr-fect mornings</span><span>•</span>
+      <span>Paw-ninis</span><span>•</span>
+      <span>Adoptable snuggles</span><span>•</span>
+      <span>Lemon-lavender cookies</span><span>•</span>
+      <span>Cashless &amp; cozy</span><span>•</span>
+      <span>Purr-fect mornings</span><span>•</span>
+      <span>Paw-ninis</span><span>•</span>
+      <span>Adoptable snuggles</span><span>•</span>
+      <span>Lemon-lavender cookies</span><span>•</span>
+      <span>Cashless &amp; cozy</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section__head">
+      <p class="eyebrow">The Experience</p>
+      <h2>Two rooms, one happy place</h2>
+      <p class="section__sub">
+        A glass partition keeps the cafe spotless while you watch the lounge in action.
+        Order on one side, snuggle on the other.
+      </p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card__icon">😺</div>
+        <h3>The Cat Lounge</h3>
+        <p>Hang out with 25&ndash;40 adoptable cats from local rescue partners. Comfy seats, sunny windows, and endless head-bonks.</p>
+        <span class="card__tag">$15 / person / hour</span>
+      </article>
+      <article class="card">
+        <div class="card__icon">☕</div>
+        <h3>The Cafe</h3>
+        <p>Fresh paw-ninis morning to night, cookies and cinnamon rolls from Tulsa vendors, plus free WiFi for the work-from-cafe crowd.</p>
+        <span class="card__tag">Breakfast &middot; Lunch &middot; Dinner</span>
+      </article>
+      <article class="card">
+        <div class="card__icon">✂️</div>
+        <h3>Groom &amp; Board</h3>
+        <p>Feline-exclusive grooming and boarding. No barking neighbors &mdash; just calm, cat-only care from people who get it.</p>
+        <span class="card__tag">Cats only</span>
+      </article>
+      <article class="card">
+        <div class="card__icon">🎉</div>
+        <h3>Private Parties</h3>
+        <p>Book the whole lounge for birthdays, showers, or team nights. Cats, snacks, and zero stress &mdash; we handle the rest.</p>
+        <span class="card__tag">By reservation</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section section--cream" id="menu">
+    <div class="section__head">
+      <p class="eyebrow">On the Menu</p>
+      <h2>Treats for two-leggers</h2>
+      <p class="section__sub">Made fresh and sourced from local Tulsa makers. Cashless only &mdash; tap, swipe, or wave that phone.</p>
+    </div>
+    <div class="menu">
+      <div class="menu__col">
+        <h3>Paw-ninis</h3>
+        <ul class="menu__list">
+          <li><span>The Tabby Melt</span><span class="dots"></span><em>$9</em></li>
+          <li><span>Caprese Cat-panini</span><span class="dots"></span><em>$10</em></li>
+          <li><span>Breakfast Purr-nini</span><span class="dots"></span><em>$8</em></li>
+          <li><span>Garden Whisker Wrap</span><span class="dots"></span><em>$9</em></li>
+        </ul>
+      </div>
+      <div class="menu__col">
+        <h3>Sweets</h3>
+        <ul class="menu__list">
+          <li><span>Lemon-Lavender Cookie</span><span class="dots"></span><em>$4</em></li>
+          <li><span>Cinnamon Roll</span><span class="dots"></span><em>$5</em></li>
+          <li><span>Catnip Sugar Cookie</span><span class="dots"></span><em>$4</em></li>
+        </ul>
+      </div>
+      <div class="menu__col">
+        <h3>Sips</h3>
+        <ul class="menu__list">
+          <li><span>Drip Coffee</span><span class="dots"></span><em>$3</em></li>
+          <li><span>Meow-cchiato</span><span class="dots"></span><em>$5</em></li>
+          <li><span>Chai Purr Latte</span><span class="dots"></span><em>$5</em></li>
+          <li><span>Loose-Leaf Tea</span><span class="dots"></span><em>$4</em></li>
+        </ul>
+      </div>
+    </div>
+    <p class="menu__note">Local vendors rotate seasonally. Ask our staff about today's specials. 🐾</p>
+  </section>
+
+  <!-- CATS / ADOPT -->
+  <section class="section" id="cats">
+    <div class="section__head">
+      <p class="eyebrow">Adopt, Don't Shop</p>
+      <h2>Meet a few of our residents</h2>
+      <p class="section__sub">
+        Every cat in the lounge is adoptable through our rescue partners. Fall in love?
+        Our staff will walk you through the adoption process right here.
+      </p>
+    </div>
+    <div class="catgrid">
+      <article class="catcard">
+        <div class="catcard__photo" style="--c1:#ffd6a5;--c2:#ffb37a">🐈</div>
+        <div class="catcard__body">
+          <h3>Biscuit</h3>
+          <p>A sunbeam-seeking orange tabby who supervises every latte.</p>
+          <span class="chip">Lap cat</span>
+        </div>
+      </article>
+      <article class="catcard">
+        <div class="catcard__photo" style="--c1:#cdb4f6;--c2:#a98bf0">🐈‍⬛</div>
+        <div class="catcard__body">
+          <h3>Domino</h3>
+          <p>Tuxedo charmer with a flair for dramatic window-watching.</p>
+          <span class="chip">Playful</span>
+        </div>
+      </article>
+      <article class="catcard">
+        <div class="catcard__photo" style="--c1:#a5d8ff;--c2:#79bdf5">🐱</div>
+        <div class="catcard__body">
+          <h3>Marshmallow</h3>
+          <p>Floofy, shy, and worth the wait. Loves slow blinks.</p>
+          <span class="chip">Gentle</span>
+        </div>
+      </article>
+      <article class="catcard">
+        <div class="catcard__photo" style="--c1:#b2f2bb;--c2:#7fe093">😸</div>
+        <div class="catcard__body">
+          <h3>Pepper</h3>
+          <p>Bonded pair with her brother Sage. Two for one snuggles!</p>
+          <span class="chip">Bonded</span>
+        </div>
+      </article>
+    </div>
+    <div class="adopt-banner">
+      <div>
+        <h3>Thinking about adopting?</h3>
+        <p>We partner with local rescues to give at-risk cats a calm place to be seen. Over 400 happy endings and counting.</p>
+      </div>
+      <a href="#visit" class="btn btn--lg">Start your visit</a>
+    </div>
+  </section>
+
+  <!-- VISIT / HOURS -->
+  <section class="section section--dark" id="visit">
+    <div class="visit">
+      <div class="visit__info">
+        <p class="eyebrow eyebrow--light">Plan Your Visit</p>
+        <h2>Find us in Tulsa</h2>
+        <p class="visit__addr">
+          5203 S. Sheridan Rd.<br />
+          Tulsa, Oklahoma 74145
+        </p>
+        <ul class="visit__details">
+          <li><span>📧</span> tulsa@takemeowt-catcafe.com</li>
+          <li><span>💳</span> Cashless only &mdash; card &amp; mobile pay</li>
+          <li><span>👶</span> All ages welcome; under 12 need an adult</li>
+          <li><span>📶</span> Free WiFi throughout the cafe</li>
+        </ul>
+        <a href="https://maps.google.com/?q=5203+S.+Sheridan+Rd.+Tulsa+OK+74145" target="_blank" rel="noopener" class="btn btn--lg">Get Directions</a>
+      </div>
+      <div class="visit__hours">
+        <h3>Hours</h3>
+        <ul class="hours">
+          <li><span>Monday</span><em>7am &ndash; 2pm <small>(Parties 4&ndash;8pm)</small></em></li>
+          <li><span>Tuesday</span><em>7am &ndash; 8pm</em></li>
+          <li><span>Wednesday</span><em>7am &ndash; 8pm</em></li>
+          <li><span>Thursday</span><em>7am &ndash; 8pm</em></li>
+          <li><span>Friday</span><em>7am &ndash; 8pm</em></li>
+          <li><span>Saturday</span><em>9am &ndash; 8pm</em></li>
+          <li><span>Sunday</span><em>9am &ndash; 8pm</em></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVE -->
+  <section class="section section--cream" id="reserve">
+    <div class="section__head">
+      <p class="eyebrow">Reserve the Lounge</p>
+      <h2>Save your seat (and your snuggles)</h2>
+      <p class="section__sub">
+        Reservations guarantee your spot &mdash; up to 8 guests per hour. Walk-ins are
+        welcome based on availability. We'll confirm by email.
+      </p>
+    </div>
+    <form class="reserve" id="reserveForm" novalidate>
+      <div class="reserve__row">
+        <label>
+          Name
+          <input type="text" name="name" required placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@email.com" />
+        </label>
+      </div>
+      <div class="reserve__row">
+        <label>
+          Date
+          <input type="date" name="date" required />
+        </label>
+        <label>
+          Time
+          <input type="time" name="time" required />
+        </label>
+        <label>
+          Guests
+          <select name="guests">
+            <option>1</option><option>2</option><option>3</option>
+            <option>4</option><option>5</option><option>6</option>
+            <option>7</option><option>8</option>
+          </select>
+        </label>
+      </div>
+      <label class="reserve__notes">
+        Anything we should know?
+        <textarea name="notes" rows="3" placeholder="Birthday, first visit, allergy-friendly seating..."></textarea>
+      </label>
+      <button type="submit" class="btn btn--lg btn--block">Request Reservation</button>
+      <p class="reserve__success" id="reserveSuccess" hidden>
+        🎉 Thanks! Your request is in. We'll email you to confirm your purr-ty.
+      </p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="brand__paw">🐾</span>
+        <span class="brand__name">Take Meowt</span>
+        <p>A cat cafe with a cause in Tulsa, Oklahoma.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#experience">The Cafe</a>
+        <a href="#menu">Menu</a>
+        <a href="#cats">Adopt</a>
+        <a href="#visit">Visit</a>
+        <a href="#reserve">Reserve</a>
+      </nav>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">👍</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+    <p class="footer__legal">© 2026 Take Meowt Cat Cafe. Made with 🐾 in Tulsa. Adopt, don't shop.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
