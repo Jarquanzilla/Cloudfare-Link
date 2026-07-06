@@ -17,20 +17,50 @@ links.querySelectorAll("a").forEach((a) =>
   })
 );
 
-// Reservation form (demo handler — no backend)
+// Reservation form → relay to the Novallem inbox via the shared Cloudflare Worker
+const CONTACT_RELAY_URL = "https://novallem-contact-relay.nealechristian4.workers.dev";
 const form = document.getElementById("reserveForm");
 const success = document.getElementById("reserveSuccess");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
   if (!form.checkValidity()) {
     form.reportValidity();
     return;
   }
-  success.hidden = false;
-  form.querySelector("button[type=submit]").textContent = "Reservation Requested 🐾";
-  form.reset();
-  success.scrollIntoView({ behavior: "smooth", block: "center" });
+  const data = new FormData(form);
+  const button = form.querySelector("button[type=submit]");
+  button.disabled = true;
+  button.textContent = "Sending…";
+
+  try {
+    const res = await fetch(CONTACT_RELAY_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        site: "whisker",
+        name: String(data.get("name") || ""),
+        email: String(data.get("email") || ""),
+        business: "Lounge reservation",
+        message:
+          `Reservation request\n` +
+          `Date: ${data.get("date") || "—"}\n` +
+          `Time: ${data.get("time") || "—"}\n` +
+          `Guests: ${data.get("guests") || "—"}\n\n` +
+          `Notes: ${data.get("notes") || "None"}`,
+      }),
+    });
+    if (!res.ok) throw new Error("relay error");
+    success.hidden = false;
+    button.textContent = "Reservation Requested 🐾";
+    form.reset();
+    success.scrollIntoView({ behavior: "smooth", block: "center" });
+  } catch {
+    button.disabled = false;
+    button.textContent = "Try Again";
+    success.hidden = false;
+    success.textContent = "Something went wrong — please email hello@novallem.com or try again.";
+  }
 });
 
 // Set the date field's minimum to today
